@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Theme.css">
+    <style>
+        body{
+            color: white
+        }
+        p{
+            color: rgb(198, 183, 183);
+        }
+        a{color: white;}
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 95%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+            z-index: -1; /* behind other elements */
+        }
+        
+        .container {
+            position: relative; /* to make the overlay work */
+            max-width: 320px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #344955;
+            border-radius: 8px;
+            border: 1px solid white;
+            box-shadow: 0 0 10px rgba(230, 227, 227, 0.601);
+        }
+        
+        /* h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        } */
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .input-group input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f0ad4e; /* use your preferred color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ec971f; /* darker shade on hover */
+        }
+        </style>
+</head>
+
+<body background="Assets/bookbg2.jpg" style="background-size: contain;">
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="Assets/logo.png" alt="logo" height="40px" width="40px"></a>
+            <strong style="font-size: 18px; margin-right: 10px;">ICarve</strong>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="login.php" method="post">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="yellowB">Login</button>
+            <p>Don't have an account? <a href="signup.html" >Sign up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

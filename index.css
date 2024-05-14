@@ -1,0 +1,244 @@
+.container_scroll {
+    max-width: 200vw;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* overflow: hidden; */
+    display: flex; /* Use flexbox */
+    /* flex-wrap: wrap; Allow wrapping */
+    justify-content: center; /* Center align items */
+    animation: slideCards 30s linear infinite; /* Apply animation */
+}
+
+.container2_scroll {
+    max-width: 98vw; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* overflow: hidden; */
+    display: flex; /* Use flexbox */
+    /* flex-wrap: wrap; Allow wrapping */
+    justify-content: center; /* Center align items */
+    animation: slideCards2 30s linear infinite; /* Apply animation */
+}
+
+.card {
+    /* width: 17%; */ /* Remove fixed width */
+    flex: 0 0 calc(33% - 40px); /* Adjust as needed */
+    margin: 20px 1%;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.marker {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #a094917d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        .Headcenter {
+            margin-top: 1.5%;
+            /* margin-left: 11%; */
+            display: flex;
+            width: 800px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DScontainer {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            /* background-color: rgb(20,20,20); */
+            /* border: 0px; */
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+
+        }
+
+        .card3 {
+            /* border: 1px solid #ccc; */
+            border-radius: 8px;
+            padding: 20px;
+            margin-right: 10px;
+            background-color: #ffd79397; 
+        }
+
+        #DesignSense {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+        .container_3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5% 0 8% 0;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            position: relative;
+            margin: 10px 5px 0 5px;
+            height: 400px;
+            /* Adjust height as needed */
+            background-image: url('Assets/bookbg.jpg');
+            /* Specify your background image */
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(239, 234, 234, 0.3);
+            /* Adjust overlay color and opacity */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .copyright {
+            /* color: white; */
+            margin-bottom: 10px;
+        }
+
+
+
+        .line {
+            width: 50%;
+            height: 1px;
+            background-color: rgb(117, 107, 107);
+            margin: 10px 0;
+        }
+
+        .terms {
+            /* color: white; */
+            font-size: 14px;
+        }
+        .terms a{
+            /* color: white; */
+            text-decoration: dotted;
+        }
+
+        #DesignSense, #BeAf {
+            margin-left: 15%;
+            width: 70%;
+        }
+
+        
+        /* Keyframes for card animation */
+
+     
+        @keyframes slideCards {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes slideCards2 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        footer{
+            margin-top: 100px;
+        }
+
+
+        @media only screen and (max-width: 768px){
+            .menu-items a{
+                color: white !important;
+            }
+            #head{
+                margin-top: 150px;
+            }
+            .card{
+                flex: 0 0 calc(100% - 40px); /* Adjust as needed */
+
+            }
+            .DScontainer{
+                flex-direction: column;
+            }
+            .card3{
+                /* height: 400px; */
+                width: 100% !important;
+                /* margin-left: 3% !important; */
+                margin-bottom: 4%;
+                
+            }
+            .card3 h3{
+                margin-top: 40% !important;
+            }
+            .container_3{
+                
+                flex-direction: column;
+            }
+            .container_3 img{
+                width: 100%;
+                height: auto;
+            }
+            .rev{
+                flex-direction: column-reverse;
+            }
+        }

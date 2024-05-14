@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container_scroll {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: black;
+            padding: 10px 0;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        .card {
+            display: inline-block;
+            width: 20%;
+            margin: 20px 1%;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .marker {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #FF5733;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Login</a>
+            <a href="#"><button> Start Now</button></a>
+            
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="card-content">
+                <h3>Card Title 1</h3>
+                <p>Description of the card.</p>
+            </div>
+            <div class="marker">1</div>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="card-content">
+                <h3>Card Title 2</h3>
+                <p>Description of the card.</p>
+            </div>
+            <div class="marker">2</div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ
+    </title>
+    <link rel="stylesheet" href="Theme.css">
+    <style>
+        .item {
+            margin-bottom: 20px;
+            background-color: #f9f0ddd6;
+            width: 60%;
+            
+            /* border: 1px solid white; */
+            box-shadow: 2px 2px rgba(213, 211, 211, 0.6);
+            border-radius: 50px;
+            text-align: left;
+            /* margin-left: 5px; */
+            padding-left: 20px;
+        }
+
+        .ques {
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+        }
+
+        .ans {
+            display: none;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+        .ans.show {
+            display: block;
+        }
+
+        h5 {
+            font-size: 20px;
+            margin: 10px 0 10px 0 !important;
+            /* line-height: 10px !important; */
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .item {
+                width: 80%;
+                /* margin-left: 10%; */
+            }
+            h5{
+                font-size: 15px;
+            }
+
+            .head {
+                margin-top: 100px !important;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html"><img src="Assets/logo.png" alt="logo" height="40px" width="40px"></a>
+            <strong style="font-size: 18px;margin-right: 10px;">ICarve</strong>
+        </div>
+    </nav>
+    <h2 style="margin-top: 7% ;" class="head">FAQs</h2>
+    <section style="display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 5%;
+">
+        <div class="item">
+            <div class="ques">
+                <h5>1. What makes iCrave Creations stand out in the industry?</h4>
+
+            </div>
+            <div class="ans">
+                <p>At iCrave Creations, we stand out by delivering world-class products and services that prioritize
+                    both quality and speed. Our commitment to innovation and customer satisfaction sets us apart.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>2. How does iCrave Creations help families find the perfect design for their home?</h4>
+
+            </div>
+            <div class="ans">
+                <p>We assist families in discovering their unique theme and suitable designs that align with their
+                    lifestyle. Through our personalized approach, we ensure that each home reflects the individuality
+                    and preferences of its owners.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>3. What types of designs does iCrave Creations specialize in?</h4>
+
+            </div>
+            <div class="ans">
+                <p> iCrave Creations specializes in modern and trendy designs that transform living spaces into stylish
+                    and functional environments. Whether it's contemporary minimalism or cozy chic, we cater to diverse
+                    design preferences.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>4. What types of designs does iCrave Creations specialize in?</h4>
+
+            </div>
+            <div class="ans">
+                <p> iCrave Creations specializes in modern and trendy designs that transform living spaces into stylish
+                    and functional environments. Whether it's contemporary minimalism or cozy chic, we cater to diverse
+                    design preferences.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>5. Can iCrave Creations customize designs to fit specific requirements?</h4>
+
+            </div>
+            <div class="ans">
+                <p> Yes, we offer customization options to tailor designs according to our clients' specific
+                    requirements and preferences. Our goal is to create personalized spaces that exceed expectations and
+                    reflect individual style.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>6. What sets iCrave Creations apart in terms of technology integration?</h4>
+
+            </div>
+            <div class="ans">
+                <p> iCrave Creations provides an ecosystem that seamlessly connects spaces with lives through
+                    cutting-edge technology. Our fully automated solutions offer a one-stop point for design and
+                    furnishing needs, enhancing convenience and efficiency.
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ques">
+                <h5>7. How does iCrave Creations plan to expand its business globally?</h4>
+
+            </div>
+            <div class="ans">
+                <p> Our mission is to achieve 100% customer and employee satisfaction as we expand our business to major
+                    cities worldwide. By maintaining our commitment to excellence and innovation, we aim to establish
+                    iCrave Creations as a trusted name in the global design industry. </p>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const faqQuestions = document.querySelectorAll('.ques');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .faq-answer.show {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="faq-item">
+    <div class="faq-question">What is Lorem Ipsum?</div>
+    <div class="faq-answer">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">Why do we use it?</div>
+    <div class="faq-answer">
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">Where does it come from?</div>
+    <div class="faq-answer">
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      question.nextElementSibling.classList.toggle('show');
+    });
+  });
+</script>
+
+</body>
+</html>
